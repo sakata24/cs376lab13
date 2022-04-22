@@ -24,6 +24,7 @@ int main(int argc, const char * argv[])
  // robotPrintAscii();
  // dalekPrintAscii();
  // robotPrintMessage();
+ // marissa
   if(argc == 1) {
 	robotPrintAscii();
 }
