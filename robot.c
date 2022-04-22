@@ -18,7 +18,12 @@
  */
 
 #include "robot.h"
+<<<<<<< HEAD
 //aaaaaaaaaaaaaa
+=======
+#include <string.h>
+
+>>>>>>> animate
 /**
  * robotPrintMessage
  *
@@ -42,7 +47,7 @@ void robotPrintAscii(void)
   int i;
   char* blank = "                              ";
   blank = blank +30;
-  printf("\n\n"
+  char* frame1 = "\n\n"
 	 "UWR: Unidentified Wheeled Robot\n"
 	 "%s    i_i    \n"
 <<<<<<< HEAD
@@ -55,11 +60,30 @@ void robotPrintAscii(void)
 >>>>>>> 692a309d21cc3393fd218d5202903e333a96f003
 >>>>>>> 10dcff6499a7aef8fc843c43c37a8f15c550f9fa
 	 "%s  /|___|\\ \n"
+	 "%s   d   b   \n";
+
+/*  for (i = 0; i <3; i++){
+    printf("\n\n"
+	 "UWR: Unidentified Wheeled Robot\n"
+	 "%s    i_i    \n"
+	 "%s   [~_~]   \n"
+	 "%s  /|___|--   \n"
 	 "%s   d   b   \n",blank, blank, blank, blank);
 
-  blank = blank - 10;
-}
 
+    blank += 20;
+  }*/
+for(i = 0; i < 3; i++){
+  printf("\n\n"
+	// "UWR: Unidentified Wheeled Robot\n"
+	 "%s    i_i    \n"
+	 "%s   [~_~]   \n"
+	 "%s  /|___|\\ \n"
+	 "%s   d   b   \n",blank, blank, blank, blank);
+	blank = blank - 10;
+   
+}
+}
 /**
  * dalekPrintAscii
  *
